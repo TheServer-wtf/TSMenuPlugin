@@ -1,0 +1,15 @@
+name: TSMenuPlugin
+version: '${project.version}'
+main: com.christmas.tsmenuplugin.TSMenuPlugin
+api-version: 1.17
+authors: [ christmas, ChR1stMas ]
+description: A Menu Plugin for TheServer.wtf
+commands:
+  getmenu:
+    description: creates menu and gives player menu item
+  openmenu:
+    description: opens a specified menu overview
+  editpage:
+    description: allows you to edit a page and stuff
+  getmenubook:
+    description: gives the player a book from a menu
