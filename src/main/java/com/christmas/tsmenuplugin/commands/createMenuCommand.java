@@ -35,7 +35,7 @@ public class createMenuCommand implements CommandExecutor { // /getmenu AmongUsG
                     mainplugin.setGUIMap(pu, menuname);
                     Yaml yaml = new Yaml(menuname + ".yml", mainplugin.getDataFolder() + "/GUIs/" + menuname + "/");
                     p.sendMessage(pf + ChatColor.GOLD + "Menu " + menuname + " has been created. Edit and create pages in it now with /editpage <pagename>");
-                    p.sendMessage(pf + ChatColor.RED + "You have been given the item editor for this Menu. Use it like Garry told you to.");
+                    p.sendMessage(pf + ChatColor.RED + "You have been given the item editor for this Menu. Use it like the tutorial (Garry) tells you to!");
                     p.getInventory().addItem(menueditor);
 
                 }
