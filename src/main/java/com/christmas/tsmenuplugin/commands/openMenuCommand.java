@@ -92,11 +92,7 @@ public class openMenuCommand implements CommandExecutor { // /openmenu builderme
                                 getinv.addItem(is); // create inventory of the page
 
                             }
-                            //debug:
-                            if(counter == 1){
-                                HumanEntity he = p;
-                                he.openInventory(getinv);
-                            }
+                            //no debug needed, nerd.
                             System.out.println("Round "+counter+". Finishing virtual Inventory");
                         } catch (IOException ioe) {
                             ioe.printStackTrace();

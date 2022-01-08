@@ -32,7 +32,7 @@ public class editPageCommand implements CommandExecutor { // /editpage misc1
                         }
                         mainplugin.setEditingMap(pu, true); //set editing to true
                         mainplugin.setPageMap(pu, pagename);
-                        p.sendMessage(pf + ChatColor.YELLOW + "Selected Page: "+ ChatColor.RED + pagename + ChatColor.GRAY + " (This Command Auto-adds the word page to a page. Sorry but it has to be that way)");
+                        p.sendMessage(pf + ChatColor.YELLOW + "Selected Page: "+ ChatColor.RED + pagename + ChatColor.GRAY + " (This Command Auto-adds the word page to a page if it doesn't already have it. Sorry but it has to be that way)");
                         p.sendMessage(pf + ChatColor.YELLOW + "You can now edit your page and click the editor item in your inventory to save it.");
                     }else{
                         p.sendMessage(pf + ChatColor.RED + "It seems like you're not editing any menus. Use /getmenu <Menuname> first");

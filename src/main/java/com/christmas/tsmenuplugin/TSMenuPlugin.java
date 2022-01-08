@@ -1,13 +1,10 @@
 package com.christmas.tsmenuplugin;
 
-import com.christmas.tsmenuplugin.commands.editPageCommand;
-import com.christmas.tsmenuplugin.commands.getMenuBookCommand;
+import com.christmas.tsmenuplugin.commands.*;
 import com.christmas.tsmenuplugin.listeners.menuRightClick;
 import com.christmas.tsmenuplugin.listeners.rightClickEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.christmas.tsmenuplugin.commands.createMenuCommand;
-import com.christmas.tsmenuplugin.commands.openMenuCommand;
 import com.christmas.tsmenuplugin.listeners.invClickEvent;
 import com.christmas.tsmenuplugin.listeners.onJoinEvent;
 import com.sun.org.apache.xpath.internal.operations.Bool;
@@ -90,7 +87,7 @@ public final class TSMenuPlugin extends JavaPlugin {
         getCommand("openmenu").setExecutor(new openMenuCommand());
         getCommand("editpage").setExecutor(new editPageCommand());
         getCommand("getmenubook").setExecutor(new getMenuBookCommand());
-
+        getCommand("delpage").setExecutor(new delPageCommand());
         getServer().getPluginManager().registerEvents(new rightClickEvent(), this);
         getServer().getPluginManager().registerEvents(new invClickEvent(), this);
         getServer().getPluginManager().registerEvents(new onJoinEvent(), this);

@@ -13,3 +13,5 @@ commands:
     description: allows you to edit a page and stuff
   getmenubook:
     description: gives the player a book from a menu
+  delpage:
+    description: deletes a page of a menu. specify menu before
