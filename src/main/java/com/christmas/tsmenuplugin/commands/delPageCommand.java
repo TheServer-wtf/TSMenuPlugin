@@ -23,8 +23,8 @@ public class delPageCommand implements CommandExecutor {
                 if (args.length == 1){
                     UUID pu = p.getUniqueId();
                 if (mainplugin.getEditingMap(pu)) {
-                    if (mainplugin.getPageMap(pu) == null || mainplugin.getCurMenuMap(pu) == null) {
-                        p.sendMessage(pf + ChatColor.RED + "Either no Page or no Menu selected! Select menu with /getmenu and a page with /editpage!");
+                    if (mainplugin.getCurMenuMap(pu) == null) {
+                        p.sendMessage(pf + ChatColor.RED + "No Menu selected! Select one with /getmenu");
                         return true;
                     }
                     String selectedpage = args[0];

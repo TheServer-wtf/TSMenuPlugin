@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.UUID;
 
 public final class TSMenuPlugin extends JavaPlugin {
-    String prefix = ChatColor.GRAY + "[" + ChatColor.RESET + "\uE004" + ChatColor.GRAY + "] " + ChatColor.WHITE;
+    String prefix = ChatColor.DARK_GRAY + "[" + ChatColor.RESET + "\uE004" + ChatColor.DARK_GRAY + "] " + ChatColor.RESET;
     private static TSMenuPlugin plugin = null;
 
     //HashMaps:
