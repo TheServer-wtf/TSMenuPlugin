@@ -32,7 +32,9 @@ public class menuRightClick implements Listener {
             System.out.println("Access granted.");
 
 
-
+            if (mainplugin.getCurMenuMap(pu) == null){
+                return;
+            }
             if(e.getView().getTitle().contains(mainplugin.getCurMenuMap(pu))) { // if the player has the right menu open
                 System.out.println("Current Menu Title is equal to the Current Menu Map!");
                 if (e.getCurrentItem() != null && e.getCurrentItem().getType() != Material.AIR) {
