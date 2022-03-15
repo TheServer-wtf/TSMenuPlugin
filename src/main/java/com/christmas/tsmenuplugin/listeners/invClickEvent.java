@@ -28,7 +28,7 @@ public class invClickEvent implements Listener {
         }
         Player p = (Player) e.getWhoClicked();
         UUID pu = p.getUniqueId();
-        if(p.hasPermission("utility.builder.menu")){
+        if(p.hasPermission("utility.modeler.menu")){
             if(mainplugin.getEditingMap(pu) == null){
                 mainplugin.setEditingMap(pu, false);
             }

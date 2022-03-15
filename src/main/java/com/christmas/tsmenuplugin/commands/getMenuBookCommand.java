@@ -26,7 +26,7 @@ public class getMenuBookCommand implements CommandExecutor {
         if (sender instanceof Player) {
             Player p = (Player) sender;
             if(args.length == 1){
-            if (p.hasPermission("utility.builder.getmenubook")) {
+            if (p.hasPermission("utility.modeler.getmenubook")) {
                 ItemStack newbook = new ItemStack(Material.ENCHANTED_BOOK, 1);
                 ItemMeta bookmeta = newbook.getItemMeta();
                 bookmeta.setDisplayName(args[0]);

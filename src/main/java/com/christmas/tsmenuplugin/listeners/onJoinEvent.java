@@ -18,7 +18,7 @@ public class onJoinEvent implements Listener {
     public void onJoin(PlayerJoinEvent e){
         Player p = e.getPlayer();
         UUID pu = p.getUniqueId();
-        if(p.hasPermission("group.modeler") ||p.hasPermission("utility.modeler.getmenu")){
+            if(p.hasPermission("group.modeler") ||p.hasPermission("utility.modeler.getmenu")){
             mainplugin.setEditingMap(pu, false);
 
         }

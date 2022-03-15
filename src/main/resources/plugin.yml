@@ -15,3 +15,11 @@ commands:
     description: gives the player a book from a menu
   delpage:
     description: deletes a page of a menu. specify menu before
+permissions:
+  utility.modeler.*:
+    children:
+      utility.modeler.getmenu: true
+      utility.modeler.delpage: true
+      utility.modeler.editpage: true
+      utility.modeler.openmenus: true
+      utility.modeler.menu: true

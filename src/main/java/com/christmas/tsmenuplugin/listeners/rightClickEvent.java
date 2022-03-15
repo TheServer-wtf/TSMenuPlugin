@@ -22,7 +22,7 @@ public class rightClickEvent implements Listener {
         if(e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK){
             Player p = e.getPlayer();
             ItemStack handeditem = p.getInventory().getItemInMainHand();
-            if (p.hasPermission("utility.builder.openmenus")) { // vibe check
+            if (p.hasPermission("utility.modeler.openmenus")) { // vibe check
                 if (handeditem.getType() == Material.ENCHANTED_BOOK) {
                     NamespacedKey cke = new NamespacedKey(mainplugin, "menu_book");
                     PersistentDataContainer Bookcontainer = handeditem.getItemMeta().getPersistentDataContainer();

@@ -6,7 +6,7 @@
 
     <groupId>com.christmas</groupId>
     <artifactId>TSMenuPlugin</artifactId>
-    <version>alpha0.1.2</version>
+    <version>alpha0.1.4</version>
     <packaging>jar</packaging>
 
     <name>TSMenuPlugin</name>

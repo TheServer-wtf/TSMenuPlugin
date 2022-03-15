@@ -19,7 +19,7 @@ public class delPageCommand implements CommandExecutor {
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         if(sender instanceof Player) {
             Player p = (Player) sender;
-            if (p.hasPermission("utility.builder.delpage")) {
+            if (p.hasPermission("utility.modeler.delpage")) {
                 if (args.length == 1){
                     UUID pu = p.getUniqueId();
                 if (mainplugin.getEditingMap(pu)) {

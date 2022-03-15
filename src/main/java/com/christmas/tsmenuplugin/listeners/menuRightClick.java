@@ -28,9 +28,7 @@ public class menuRightClick implements Listener {
         UUID pu = p.getUniqueId();
         ItemStack clickedItem = e.getCurrentItem();
         if (clickedItem == null || clickedItem.getType().isAir()) return;
-        if(p.hasPermission("utility.builder.openmenus")) {
-            System.out.println("Access granted.");
-
+        if(p.hasPermission("utility.modeler.openmenus")) {
 
             if (mainplugin.getCurMenuMap(pu) == null){
                 return;

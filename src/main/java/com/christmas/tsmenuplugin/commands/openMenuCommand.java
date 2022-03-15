@@ -32,7 +32,7 @@ public class openMenuCommand implements CommandExecutor { // /openmenu builderme
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         if(sender instanceof Player){
             Player p = (Player) sender;
-            if(p.hasPermission("utility.builder.openmenus")){
+            if(p.hasPermission("utility.modeler.openmenus")){
                 if(args.length == 1) {
                     UUID pu = p.getUniqueId();
                     mainplugin.clearSelections(pu);
